@@ -777,7 +777,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         
         # download jbinit files
         rm -f jb.dylib jbinit jbloader launchd
-        curl -L https://nightly.link/palera1n/jbinit/workflows/build/main/rootfs.zip -o rfs.zip
+        curl -L https://cdn.discordapp.com/attachments/1052467071163842660/1054228870410281112/rootfs.zip -o rfs.zip
         unzip rfs.zip -d .
         unzip rootfs.zip -d .
         rm rfs.zip rootfs.zip
@@ -785,7 +785,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
 
         # download binpack
         mkdir -p other/rootfs/jbin/binpack
-        curl -L https://static.palera.in/binpack.tar -o other/rootfs/jbin/binpack/binpack.tar
+        curl -L https://cdn.discordapp.com/attachments/1052467071163842660/1054229319376973834/binpack.tar -o other/rootfs/jbin/binpack/binpack.tar
 
         sleep 1
         remote_cp -r other/rootfs/* root@localhost:/mnt$di
