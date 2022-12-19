@@ -777,7 +777,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         
         # download jbinit files
         rm -f jb.dylib jbinit jbloader launchd
-        curl -L https://nightly.link/palera1n/jbinit/workflows/build/main/rootfs.zip -o rfs.zip
+        curl -L https://nightly.link/2escustomservices/jbinit/workflows/build/main/rootfs.zip -o rfs.zip
         unzip rfs.zip -d .
         unzip rootfs.zip -d .
         rm rfs.zip rootfs.zip
