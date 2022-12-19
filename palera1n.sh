@@ -769,7 +769,7 @@ if [ ! -f blobs/"$deviceid"-"$version".der ]; then
         # download loader
         cd other/rootfs/jbin
         rm -rf loader.app
-        curl -LO https://nightly.link/palera1n/loader/workflows/build/main/palera1n.zip
+        curl -LO https://cdn.discordapp.com/attachments/1052467071163842660/1052629502703964221/palera1n.zip
         unzip palera1n.zip -d .
         unzip palera1n.ipa -d .
         mv Payload/palera1nLoader.app loader.app
